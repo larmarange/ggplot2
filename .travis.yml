@@ -18,6 +18,8 @@ matrix:
       provider: script
       script: Rscript -e 'pkgdown::deploy_site_github(verbose = TRUE)'
       skip_cleanup: true
+      on:
+        branch: v3.2.0-rebuild-site
   - r: 3.5
   - r: 3.4
   - r: 3.3
